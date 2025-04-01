@@ -1,0 +1,24 @@
+{
+  "name": "w5-monuments-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "node .",
+    "build": "tsc",
+    "build:dev": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/chalk": "^0.4.31",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "express": "^5.1.0"
+  }
+}
