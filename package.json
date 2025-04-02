@@ -32,10 +32,10 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.29.0",
+    "@types/morgan": "^1.9.9",
     "uuid": "^11.1.0"
   },
   "dependencies": {
-    "@types/morgan": "^1.9.9",
     "chalk": "^5.4.1",
     "express": "^5.1.0",
     "morgan": "^1.10.0"
