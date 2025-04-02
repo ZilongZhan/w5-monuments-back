@@ -29,9 +29,11 @@ const tajMahal = new Monument(
   { country: "India", city: "Agra" },
 );
 
-export const monuments: MonumentStructure[] = [
+const monuments: MonumentStructure[] = [
   colosseumOfRome,
   eiffelTower,
   greatWallOfChina,
   tajMahal,
 ];
+
+export default monuments;
