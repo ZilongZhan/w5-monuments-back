@@ -1,7 +1,5 @@
 import { Request, Response } from "express";
 
-interface MonumentControllerStructure {
+export interface MonumentControllerStructure {
   getAllMonuments: (req: Request, res: Response) => void;
 }
-
-export default MonumentControllerStructure;
