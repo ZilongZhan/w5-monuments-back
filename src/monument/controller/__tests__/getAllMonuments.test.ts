@@ -3,10 +3,6 @@ import MonumentController from "../MonumentController.js";
 import Monument from "../../Monument.js";
 
 describe("Given the getAllMonuments function", () => {
-  afterEach(() => {
-    jest.clearAllMocks();
-  });
-
   describe("When it receives any request and any response", () => {
     const myNeighborMariasHouse = new Monument(
       "Maria's house",
@@ -29,6 +25,10 @@ describe("Given the getAllMonuments function", () => {
       status: jest.fn().mockReturnThis(),
       json: jest.fn(),
     } as Pick<Response, "status" | "json">;
+
+    afterEach(() => {
+      jest.clearAllMocks();
+    });
 
     test("Then it should call the response's status method with status code 200", () => {
       const expectedStatusCode = 200;
