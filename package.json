@@ -2,7 +2,7 @@
   "name": "w5-monuments-back",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/app.js",
+  "main": "dist",
   "scripts": {
     "start": "node .",
     "build": "tsc",
