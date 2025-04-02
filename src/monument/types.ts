@@ -3,7 +3,8 @@ export interface MonumentStructure {
   name: string;
   description: string;
   imageUrl: string;
-  location: Location;
+  country: string;
+  city: string;
 }
 
 export interface Location {
