@@ -7,7 +7,7 @@ import handleHealthCheck from "./middlewares/handleHealthStatus/handleHealthChec
 const app = express();
 
 app.use(morgan("dev"));
-app.get("/health", handleHealthCheck);
+app.get("/", handleHealthCheck);
 app.use("/monuments", monumentsRouter);
 app.use(handleEndpointNotFound);
 
