@@ -6,8 +6,8 @@ describe("Given the handleHealthCheck middleware", () => {
     const req = {};
     const res = {
       status: jest.fn().mockReturnThis(),
-      send: jest.fn(),
-    } as Pick<Response, "status" | "send">;
+      json: jest.fn(),
+    } as Pick<Response, "status" | "json">;
 
     afterEach(() => {
       jest.clearAllMocks();
@@ -21,12 +21,12 @@ describe("Given the handleHealthCheck middleware", () => {
       expect(res.status).toHaveBeenCalledWith(expectedStatusCode);
     });
 
-    test("Then it should call the response's send method with response 'GÜINO'", () => {
-      const expectedResponse = "GÜINO";
+    test("Then it should call the response's send method with response 'OK'", () => {
+      const expectedResponse = { message: "OK" };
 
       handleHealthCheck(req as Request, res as Response);
 
-      expect(res.send).toHaveBeenCalledWith(expectedResponse);
+      expect(res.json).toHaveBeenCalledWith(expectedResponse);
     });
   });
 });
