@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import handleHealthCheck from "./handleHealthCheck.js";
 
 describe("Given the handleHealthCheck middleware", () => {
-  describe("When it receives any request and any response", () => {
+  describe("When it receives a response", () => {
     const req = {};
     const res = {
       status: jest.fn().mockReturnThis(),
