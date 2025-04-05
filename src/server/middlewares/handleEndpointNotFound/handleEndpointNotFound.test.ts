@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import handleEndpointNotFound from "./handleEntpointNotFount.js";
 
 describe("Given the handleEntpointNotFound function", () => {
-  describe("When it receives a request with any path of any method, and a response", () => {
+  describe("When it receives a response", () => {
     const req = {};
     const res = {
       status: jest.fn().mockReturnThis(),

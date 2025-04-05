@@ -3,7 +3,7 @@ import MonumentController from "../MonumentController.js";
 import Monument from "../../Monument.js";
 
 describe("Given the getAllMonuments function", () => {
-  describe("When it receives any request and any response", () => {
+  describe("When it receives a response", () => {
     const myNeighborMariasHouse = new Monument(
       "Maria's house",
       "An old house that is otherwise normal",
