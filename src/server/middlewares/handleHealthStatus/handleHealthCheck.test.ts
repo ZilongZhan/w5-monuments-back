@@ -21,7 +21,7 @@ describe("Given the handleHealthCheck middleware", () => {
       expect(res.status).toHaveBeenCalledWith(expectedStatusCode);
     });
 
-    test("Then it should call the response's send method with response 'OK'", () => {
+    test("Then it should call the response's json method with response 'OK'", () => {
       const expectedResponse = { message: "OK" };
 
       handleHealthCheck(req as Request, res as Response);

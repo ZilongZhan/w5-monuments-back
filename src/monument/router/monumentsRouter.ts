@@ -8,4 +8,6 @@ const monumentController = new MonumentController(monuments);
 
 monumentsRouter.get("/", monumentController.getAllMonuments);
 
+monumentsRouter.post("/create", monumentController.createMonument);
+
 export default monumentsRouter;

@@ -2,29 +2,29 @@ import Monument from "../Monument.js";
 import { MonumentStructure } from "../types.js";
 
 const colosseumOfRome = new Monument(
-  "Coliseo de Roma",
-  "El Coliseo de Roma es un anfiteatro de la época del Imperio romano, construido en el siglo I y ubicado en el centro de la ciudad de Roma.",
+  "Colosseum of Rome",
+  "The Colosseum of Rome is an amphitheater from the time of the Roman Empire, built in the 1st century and located in the center of the city of Rome.",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/2560px-Colosseo_2020.jpg",
-  { country: "Italia", city: "Roma" },
+  { country: "Italy", city: "Rome" },
 );
 
 const eiffelTower = new Monument(
-  "Torre Eiffel",
-  "La Torre Eiffel es una torre de hierro situada en París, Francia, construida en 1889 como entrada a la Exposición Universal. Es uno de los monumentos más emblemáticos del mundo.",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Eiffelturm.JPG/1280px-Eiffelturm.JPG",
-  { country: "Francia", city: "París" },
+  "Eiffel Tower",
+  "The Eiffel Tower is an iron tower located in Paris, France, built in 1889 as an entrance to the Universal Exposition. It is one of the world's most iconic monuments.",
+  "https://media.cnn.com/api/v1/images/stellar/prod/170801114832-eiffel-tower-guide-base.jpg?q=w_2187,h_1458,x_0,y_0,c_fill",
+  { country: "France", city: "Paris" },
 );
 
 const greatWallOfChina = new Monument(
-  "Gran Muralla China",
-  "La Gran Muralla China es una serie de fortificaciones que se extienden a través de varias provincias chinas. Fue construida para proteger el Imperio chino de invasiones durante las dinastías Qin y Ming.",
+  "Great Wall of China",
+  "The Great Wall of China is a series of fortifications that stretch across several Chinese provinces. It was built to protect the Chinese Empire from invasion during the Qin and Ming dynasties.",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/2560px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
   { country: "China", city: "Beijing" },
 );
 
 const tajMahal = new Monument(
   "Taj Mahal",
-  "El Taj Mahal es un mausoleo de mármol blanco situado en Agra, India, construido entre 1632 y 1653. Fue encargado por el emperador Shah Jahan en memoria de su esposa Mumtaz Mahal.",
+  "The Taj Mahal is a white marble mausoleum located in Agra, India, built between 1632 and 1653. It was commissioned by Emperor Shah Jahan in memory of his wife Mumtaz Mahal.",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/2560px-Taj_Mahal_%28Edited%29.jpeg",
   { country: "India", city: "Agra" },
 );

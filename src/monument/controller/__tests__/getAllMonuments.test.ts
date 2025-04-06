@@ -1,23 +1,13 @@
 import { Request, Response } from "express";
 import MonumentController from "../MonumentController.js";
-import Monument from "../../Monument.js";
+import {
+  myNeighborIgnaciosHouse,
+  myNeighborMariasHouse,
+} from "../../fixtures.js";
 
 describe("Given the getAllMonuments function", () => {
   describe("When it receives a response", () => {
-    const myNeighborMariasHouse = new Monument(
-      "Maria's house",
-      "An old house that is otherwise normal",
-      "http://mariashouse.com/house.webp",
-      { city: "Mariapolis", country: "Marialand" },
-    );
-    const myNeighborIgnaciosHouse = new Monument(
-      "Ignacio's house",
-      "A modern house that is otherwise normal",
-      "http://ignacioshouse.com/house.webp",
-      { city: "Ignaciopolis", country: "Ignaciolandia" },
-    );
     const monuments = [myNeighborMariasHouse, myNeighborIgnaciosHouse];
-
     const monumentController = new MonumentController(monuments);
 
     const req = {};

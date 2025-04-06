@@ -8,7 +8,7 @@ import handleHealthCheck from "./middlewares/handleHealthStatus/handleHealthChec
 const app = express();
 
 app.use(morgan("dev"));
-
+app.use(express.json());
 app.use(cors());
 
 app.get("/", handleHealthCheck);
