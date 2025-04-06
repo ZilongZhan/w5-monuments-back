@@ -20,6 +20,7 @@ class MonumentController implements MonumentControllerStructure {
 
     if (existingMonument) {
       res.status(409).json({ error: "Monument already exists" });
+      return;
     }
 
     const monument = new Monument(name, description, imageUrl, {
