@@ -1,17 +1,25 @@
 import Monument from "./Monument.js";
 
 const myNeighborMariasHouse = new Monument(
-  "Maria's house",
-  "An old house that is otherwise normal",
-  "http://mariashouse.com/house.webp",
-  { city: "Mariapolis", country: "Marialand" },
+  {
+    name: "Maria's house",
+    description: "An old house that is otherwise normal",
+    imageUrl: "http://mariashouse.com/house.webp",
+    city: "Mariapolis",
+    country: "Marialand",
+  },
+  () => "mariasHouseId",
 );
 
 const myNeighborIgnaciosHouse = new Monument(
-  "Ignacio's house",
-  "A modern house that is otherwise normal",
-  "http://ignacioshouse.com/house.webp",
-  { city: "Ignaciopolis", country: "Ignaciolandia" },
+  {
+    name: "Ignacio's house",
+    description: "A modern house that is otherwise normal",
+    imageUrl: "http://ignacioshouse.com/house.webp",
+    city: "Ignaciopolis",
+    country: "Ignaciolandia",
+  },
+  () => "ignaciosHouseId",
 );
 
 export { myNeighborIgnaciosHouse, myNeighborMariasHouse };

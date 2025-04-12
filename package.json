@@ -9,6 +9,7 @@
     "build:dev": "tsc --watch",
     "test": "jest",
     "test:dev": "jest --watchAll",
+    "test:coverage": "jest --coverage",
     "prepare": "husky"
   },
   "keywords": [],
