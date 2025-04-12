@@ -52,8 +52,11 @@ class MonumentController implements MonumentControllerStructure {
       (monument) => monument.id === monumentId,
     );
 
+    const monument = this.monuments[monumentPosition];
+
     this.monuments.splice(monumentPosition, 1);
-    res.status(200).json({ message: "Monument deleted successfully" });
+
+    res.status(200).json(monument);
   };
 }
 

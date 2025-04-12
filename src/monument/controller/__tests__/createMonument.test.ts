@@ -22,7 +22,7 @@ describe("Given the createMonument function", () => {
     jest.clearAllMocks();
   });
 
-  describe("When it receives a request with my neighbor Maria's house and a response", () => {
+  describe("When it receives a request with my neighbor Maria's house", () => {
     const req = {
       body: myNeighborMariasHouse,
     } as Pick<Request, "body">;
@@ -70,7 +70,7 @@ describe("Given the createMonument function", () => {
     });
   });
 
-  describe("When it receives my neighbor Ignacio's house and a response", () => {
+  describe("When it receives my neighbor Ignacio's house", () => {
     const req = {
       body: myNeighborIgnaciosHouse,
     } as Pick<Request, "body">;
