@@ -22,7 +22,7 @@ describe("Given the MonumentController's deleteMonumentById method", () => {
     jest.clearAllMocks();
   });
 
-  describe("When it receives a request with my neighbor Maria's house's ID as params, and a response", () => {
+  describe("When it receives a request with my neighbor Maria's house's ID as params", () => {
     const req = {
       params: {
         monumentId: "mariasHouseId",
@@ -37,8 +37,8 @@ describe("Given the MonumentController's deleteMonumentById method", () => {
       expect(res.status).toHaveBeenCalledWith(expectedStatusCode);
     });
 
-    test("Then it should call the response's json method with response 'Monument deleted successfully'", () => {
-      const expectedResponse = { message: "Monument deleted successfully" };
+    test("Then it should call the response's json method with my neighbor Maria's house", () => {
+      const expectedResponse = myNeighborMariasHouse;
 
       monumentController.deleteMonumentById(req as Request, res as Response);
 
@@ -52,7 +52,7 @@ describe("Given the MonumentController's deleteMonumentById method", () => {
     });
   });
 
-  describe("When it receives a request with my neighbor Obadiah's house's ID which does not exist, and a response", () => {
+  describe("When it receives a request with my neighbor Obadiah's house's ID which does not exist", () => {
     const req = {
       params: {
         monumentId: "obadiahsHouseId",
