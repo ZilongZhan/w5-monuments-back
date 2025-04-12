@@ -6,7 +6,10 @@ describe("Given the Golden Gate Bridge", () => {
       const expectedCity = "San Francisco";
       const expectedCountry = "USA";
 
-      const goldenGateBridge = new Monument("", "", "", {
+      const goldenGateBridge = new Monument({
+        name: "",
+        description: "",
+        imageUrl: "",
         city: "San Francisco",
         country: "USA",
       });
@@ -18,7 +21,10 @@ describe("Given the Golden Gate Bridge", () => {
     test("Then it should be called 'Golden Gate Bridge'", () => {
       const expectedName = "Golden Gate Bridge";
 
-      const goldenGateBridge = new Monument("Golden Gate Bridge", "", "", {
+      const goldenGateBridge = new Monument({
+        name: "Golden Gate Bridge",
+        description: "",
+        imageUrl: "",
         city: "",
         country: "",
       });
@@ -30,12 +36,13 @@ describe("Given the Golden Gate Bridge", () => {
       const expectedDescription =
         "A ginormous red bridge located in San Francisco";
 
-      const goldenGateBridge = new Monument(
-        "",
-        "A ginormous red bridge located in San Francisco",
-        "",
-        { city: "", country: "" },
-      );
+      const goldenGateBridge = new Monument({
+        name: "",
+        description: "A ginormous red bridge located in San Francisco",
+        imageUrl: "",
+        city: "",
+        country: "",
+      });
 
       expect(goldenGateBridge.description).toBe(expectedDescription);
     });

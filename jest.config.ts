@@ -5,6 +5,9 @@ const config: Config = {
   rootDir: "src",
   resolver: "ts-jest-resolver",
   verbose: true,
+  collectCoverage: false,
+  collectCoverageFrom: ["**/*.ts", "!index.ts", "**/types.*"],
+  coverageDirectory: "../coverage",
   ...createDefaultPreset(),
 };
 
